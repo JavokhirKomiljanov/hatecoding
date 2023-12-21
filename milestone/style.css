@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.welcome {
+    background-color: #e3e3e1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.welcome-wordle-img img {
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.welcome-title {
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.welcome-subtitle {
+    max-width: 375px;
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.button-container {
+    margin-bottom: 28px;
+    flex-direction: row;
+    text-align: center;
+}
+
+.welcome-how-play {
+    background: none;
+    color: #000;
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.welcome-play {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000000;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.date-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.date-container p {
+    font-size: 1em;
+    line-height: 1.25;
+    letter-spacing: .005em;
+    font-weight: 600;
+}
+
+.close-button a{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.how-play-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 80px;
+}
+
+.how-play-card {
+    position: relative;
+    max-width: 512px;
+    border-radius: 8px;
+    border: 1px solid #1a1a1b;
+    background-color: #121213;
+    color: #fff;
+    box-shadow: 0 4px 23px 0 rgba(0, 0, 0, .2);
+    width: 90%;
+    max-height: 100%;
+    padding: 16px;
+}
+
+.how-play-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 4px;
+    margin-top: 29px;
+}
+
+.title-subheading {
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.title-subheading {
+    margin-bottom: 10px;
+}
+
+.module-subheading {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.module-subheading li {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.words {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.letter {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    background-color: #121213;
+    border: 2px solid #565758;
+    color: #fff;
+}
+
+.letter--w {
+    background-color: #538d4e;
+}
+
+.letter--i {
+    background-color: #b59f3b;
+}
+
+.letter--u {
+    background-color: #3a3a3c;
+}
+
+.letters-last {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.module-login {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 17px 0;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 0 auto 20px;
+}
+
+.module-login a {
+    text-decoration: none;
+    color: #477aaa;
+}
+
+.module-login span {
+    color: #fff;
+}
+
+.module-reminder span {
+    color: #477aaa;
+}
+
+.wordle-header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3c;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.play-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/*.bords {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-grow: 1;*/
+/*}*/
+
+.bord-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 8px;
+    margin-bottom: 8px;
+}
+
+.bord-box {
+    border: 2px solid #3a3a3c;
+    width: 45px;
+    height: 45px;
+    background-color: #121213;
+}
+
+.keybords {
+    margin-top: 10px;
+}
+
+.keybord-1, .keybord-2, .keybord-3 {
+    display: flex;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keybord-2 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keybord-letter {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+    width: 40px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #818384;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.letter--enter {
+    font-size: 12px;
+}
+
+
