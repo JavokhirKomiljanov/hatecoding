@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone1.0</title>
+    <style>
+        .coffeemastercentered {
+            position:absolute;
+            left: 700px;
+            top: 10px
+        }
+        .mainborder{
+            border-style: solid;
+            border-top: 0%;
+            border-color: rgb(63, 42, 20);
+            background-color:rgb(63, 42, 20);
+        }
+        .items-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .payment-container {
+            padding-right: 20px;
+        }
+        .box {
+            border: 2px solid rgb(255,228,196,0.3);
+            border-radius: 10px;
+            background-color: rgb(255,228,196,0.3);
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .box2{
+            border: 2px solid rgb(255,228,196,0.3);
+            border-radius: 10px;
+            background-color: rgb(255,228,196,0.3);
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .total{
+            margin-top: 150px;
+        }
+        .orderborder{
+            border-style: solid;
+            border-color: rgba(147, 87, 23,0.4);
+            background-color: rgba(147, 87, 23,0.5);
+            border-radius: 10px;
+            border-width: 60%;
+            margin: 0 60px; 
+            padding: 5px; 
+        }
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 600px;
+        }
+        .borderleft{
+            border-left: 5px solid;
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+        }
+
+        .borderforname{
+            position: relative;
+            display: inline-block;
+        }
+
+        .nameinput{
+            border-color:  rgb(184, 115, 51);
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .namelabel{
+            color:  rgb(184, 115, 51);
+            background-color: rgb(255,228,196);
+            font-size: 11px;
+            position: absolute;
+            left: 10px;
+            top: 16px;
+            padding: 0 2px;
+        }
+
+        .paylabel{
+            color:  rgb(184, 115, 51);
+            background-color: rgb(255,228,196);
+            font-size: 11px;
+            position: absolute;
+            left: 10px;
+            top: -6px;
+            padding: 0 2px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(128, 128, 128,0.5);">
+    <div class="mainborder">
+        <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffee" style="width: 30px; height: 30px; margin-left: 650px;margin-top: 10px;">
+        <p class="coffeemastercentered" style="color: white;"> Coffee Masters</p>
+    </div>
+    <div class="items-container">
+        <div class="box">
+            <p style="padding-left: 100px; padding-right: 500px;padding-bottom:20px; padding-top:30px;color: rgb(184, 115, 51);">ITEMS</p>
+            <pre style="font-size: medium;">       1x   <b>Cappuccino </b>                                                          <b>$3.35</b></pre>        
+            <pre style="color: rgb(184, 115, 51);border-bottom-style: solid;border-color:rgba(184, 115, 51,0.4);">            Lite foam</pre>
+            <pre>       1x   <b>Cappuccino </b>                                                          <b>$3.85</b></pre>
+            <pre style="color: rgb(184, 115, 51);">            Lite milk</pre>
+            <pre style="color: rgb(184, 115, 51);border-bottom-style: solid;border-color:rgba(184, 115, 51,0.4);">            Double espresso</pre>
+            <pre >       1x   <b>Croissant </b>                                                           <b>$2.45</b></pre>
+            <pre style="color: rgb(184, 115, 51);">            Butter</pre>
+        </div>
+        <div class="payment-container">
+            <div class="box2">
+                <p style="color: rgb(184, 115, 51);padding-right: 600px;padding-top: 20px;">NAME</p>
+                <div class="borderforname">
+                    <label for="nameorder" class="namelabel" style="color: rgb(184, 115, 51);">Name for order</label><br>       
+                    <input id="nameorder"class="nameinput"style="padding-left:30px;"></input>
+                </div>
+            </div>
+            <div class="box2">
+                <p style="color: rgb(184, 115, 51);padding-right: 600px;padding-top: 20px;">PAYMENT</p>
+                <div class="borderforname">
+                    <label for="cardnumber" class="paylabel" style="color: rgb(184, 115, 51) ;">  Card number</label>        
+                    <input id="cardnumber" class="nameinput" style="padding-left:30px;"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2 total">
+        <div>
+            <ul style="list-style-type: none;">
+                <li>Subtotal:</li>
+                <li>Tax:</li>
+                <li><b>Total:</b></li>
+            </ul> 
+        </div>
+        <div>
+            <ul style="list-style-type: none;padding-right: 650px;">
+                <li>$9.65</li>
+                <li>$0.82</li>
+                <li><b>$10.47</b></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <P class="orderborder" style="text-align: center;">Place order</P>
+    </div>
+</body>
+</html>
